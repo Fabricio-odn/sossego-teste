@@ -1,18 +1,10 @@
 import React from 'react';
 
-import { Icon, Spacer } from '@chakra-ui/react';
+import { Icon } from '@chakra-ui/react';
 import { RiUser5Fill, RiHome4Fill, RiFileTextFill } from 'react-icons/ri';
+import { Container, Flex, Circle, Text } from '@chakra-ui/react';
 
-import {
-  Container,
-  Flex,
-  Grid,
-  GridItem,
-  Box,
-  Center,
-  Circle,
-  Text,
-} from '@chakra-ui/react';
+import FormUserCreation from './Components/Form/FormUserCreation';
 
 import './App.css';
 
@@ -49,6 +41,8 @@ function App() {
             </Circle>
             <Text>Sobre Você</Text>
           </Flex>
+
+          <FormUserCreation />
         </Container>
       </Flex>
     </div>
